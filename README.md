@@ -51,12 +51,10 @@ The project demonstrates expertise in:
   - Expected value with perfect information (EVPI)
   - Risk-adjusted generation plan
 
-### Model 5 (Optional): Minimax Regret Optimization
+### Model 5: Minimax Regret Optimization
 - **Objective:** Minimize the **maximum regret** across all wind generation scenarios, ensuring robustness against uncertainty.  
 - **Key Outputs:**
   - Robust generation schedule
   - Maximum and expected regret values
 
----
 
-## Repository Structure
