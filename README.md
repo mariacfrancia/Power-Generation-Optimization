@@ -16,45 +16,18 @@ The project demonstrates expertise in:
 
 ## Models Implemented
 
-### Model 1: Linear Production Cost Minimization
-- **Objective:** Minimize production costs using only the linear unit cost term (`bi`).  
-- **Key Outputs:**
-  - Hourly unit commitment and generation
-  - Hydro generation per block
-  - Marginal water value (substitution value)
+- **Model 1: Linear Cost Minimization**  
+  Minimize production costs using linear unit costs. Outputs: hourly unit commitment, hydro generation, marginal water value.
 
-### Model 2: Uniform Price Minimization
-- **Objective:** Minimize total payment assuming a single hourly market price, equal to the maximum unit cost of all active generators.  
-- **Key Outputs:**
-  - Hourly schedule of units
-  - Coupled units per hour
-  - Hydro generation
-  - Hourly clearing price
+- **Model 2: Uniform Price Minimization**  
+  Minimize total payment assuming a single hourly market price. Outputs: unit schedules, coupled units, hydro generation, hourly price.
 
-### Model 3: Cost Minimization with Startup/Shutdown Costs
-- **Objective:** Minimize production costs including both linear approximation and **startup/shutdown costs** of thermal units.  
-- **Key Outputs:**
-  - Generation schedule with unit on/off states
-  - Units starting and stopping per hour
-  - Hydro generation
-  - Total system cost
+- **Model 3: Cost Minimization with Startup/Shutdown**  
+  Minimize costs including startup/shutdown of thermal units. Outputs: generation schedule, unit on/off states, hydro generation, total system cost.
 
-### Model 4: Stochastic Optimization with Wind Uncertainty
-- **Objective:** Minimize **expected production costs** considering stochastic wind scenarios.  
-- **Scenario Description:**
-  - Hours 1–2: deterministic wind production
-  - Hour 3: +400 MW (p=0.6) or −600 MW (p=0.4)
-  - Hour 4: conditional on hour 3 outcome, with further probabilistic deviations
-- **Key Outputs:**
-  - Optimal stochastic schedule
-  - Expected value of the stochastic solution (VSS)
-  - Expected value with perfect information (EVPI)
-  - Risk-adjusted generation plan
+- **Model 4: Stochastic Optimization (Wind Uncertainty)**  
+  Minimize expected costs under probabilistic wind scenarios. Outputs: stochastic schedule, expected value of stochastic solution (VSS), EV with perfect information (EVPI), risk-adjusted plan.
 
-### Model 5: Minimax Regret Optimization
-- **Objective:** Minimize the **maximum regret** across all wind generation scenarios, ensuring robustness against uncertainty.  
-- **Key Outputs:**
-  - Robust generation schedule
-  - Maximum and expected regret values
-
+- **Model 5: Minimax Regret (Optional)**  
+  Minimize maximum regret across scenarios. Outputs: robust schedule, maximum and expected regret.
 
